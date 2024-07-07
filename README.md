@@ -8,10 +8,13 @@
   Dessa forma, foi idealizado para o projeto uma automação residencial que consiste em um sistema integrado que conecta diversos dispositivos e sistemas domésticos a uma plataforma centralizada. Esta plataforma, acessível através de um terminal que estará disponível para o usuário, permite o controle e monitoramento em tempo real de componentes como iluminação, climatização, segurança e aparelhos eletrodomésticos. O funcionamento básico do sistema envolve a instalação de sensores e atuadores que se comunicam. A central de controle processa as informações recebidas dos sensores, executa comandos de automação previamente configurados e possibilita ajustes manuais pelos usuários, proporcionando uma experiência de uso intuitiva e eficiente.
   Na ideia inicial, será visado, para a construção e desenvolvimento do código, uma determinada planta de domicílio disponível na Internet, figura abaixo, uma vez que apresenta cômodos que estão presentes na maioria das casas, isto é, quartos, banheiro, sala, cozinha e garagem. Dessa forma, caso seja da vontade do usuário incluir outro novo cômodo ou aumentar a quantidade de algum dos repartimentos de casa citados acima, é necessário apenas fazer pequenos ajustes e configurações.</p>
 
-![Planta padrão utilizado no projeto](https://github.com/Joao0607B/Trabalho-PDS-2/assets/168564497/57882f67-6d86-4757-a151-80d5d2194c39)
+<p align="center">
+  <img src="https://plantasdecasas.com/planta-baixa-terreno-estreito/humanizada-maraba/" />
+</p>
 
-  Figura 1 - Planta padrão utilizado no projeto (Humanizada-Maraba)
-  Disponível em: https://plantasdecasas.com/planta-baixa-terreno-estreito/humanizada-maraba/)
+<p align="center">Figura 1 - Planta padrão utilizado no projeto (Humanizada-Maraba)</p>
+
+<p align="center"> Disponível em: https://plantasdecasas.com/planta-baixa-terreno-estreito/humanizada-maraba/)</p>
 
 <p align="justify"> Ademais, foi definido determinados sensores como padrões, sendo esses: sensor de temperatura, de umidade, de luminosidade, de fechamento de janela, porta e portão de garagem. Além disso, assim como definido para os cômodos, caso o usuário deseje adicionar um novo sensor em seu domicílio, ele será capaz de cadastrar e configurar os novos sensores de acordo com suas necessidades.
 Outra característica do projeto é reconhecer e separar quais cômodos cada usuário cadastrado pode modificar em seu domicílio, a fim de não gerar conflitos e desavenças entre os familiares. Além disso, a fim de universalizar o projeto, nosso código está disponível em português, inglês e espanhol, isto é, nosso sistema pode ser utilizado em diversos países, sendo necessário apenas pequenas modificações de inicialização.

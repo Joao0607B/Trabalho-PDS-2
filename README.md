@@ -9,7 +9,7 @@
   Na ideia inicial, será visado, para a construção e desenvolvimento do código, uma determinada planta de domicílio disponível na Internet, figura abaixo, uma vez que apresenta cômodos que estão presentes na maioria das casas, isto é, quartos, banheiro, sala, cozinha e garagem. Dessa forma, caso seja da vontade do usuário incluir outro novo cômodo ou aumentar a quantidade de algum dos repartimentos de casa citados acima, é necessário apenas fazer pequenos ajustes e configurações.</p>
 
 <p align="center">
-  <img width="460" height="300" src="https://plantasdecasas.com/planta-baixa-terreno-estreito/humanizada-maraba">
+<img loading="lazy" src="https://plantasdecasas.com/wp-content/uploads/2019/02/Humanizada-Maraba-300x126.jpg"/>
 </p>
 
 <p align="center">Figura 1 - Planta padrão utilizado no projeto (Humanizada-Maraba)</p>

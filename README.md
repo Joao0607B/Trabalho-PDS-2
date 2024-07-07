@@ -77,6 +77,7 @@ Para utilizar o sistema de automação residencial:
 - Personalize as configurações e defina cenários de automação de acordo com suas preferências e necessidades.
 
 # Desenvolvedores
-| [<img loading="lazy" src="https://avatars.githubusercontent.com/u/174884404?v=4" width=115><br><sub>Carlos Eduardo Guimarães Coimbra</sub>](https://github.com/duducoimbra) |  [<img loading="lazy" src="https://avatars.githubusercontent.com/u/174391290?s=400&u=563703186cd45436cfbe4b6789dfb0fd9afdf356&v=4" width=115><br><sub>Igor Gustavo de Souza Araujo</sub>](https://github.com/Igorgu3) |  [<img loading="lazy" src="https://avatars.githubusercontent.com/u/168564497?v=4" width=115><br><sub>João Pedro Braga da Silva</sub>](https://github.com/Joao0607B) | [<img loading="lazy" src="https://avatars.githubusercontent.com/u/174884410?v=4" width=115><br><sub>Lucas de Araújo Sampaio Latini</sub>](https://github.com/lucas-latini) | [<img loading="lazy" src="https://avatars.githubusercontent.com/u/51024598?v=4" width=115><br><sub>Otavio Henrique da Silva</sub>](https://github.com/Octupuss) | 
-| :---: | :---: | :---: | :---: | :---: | :---: |
+| [<img loading="lazy" src="https://avatars.githubusercontent.com/u/174884404?v=4" width=115><br><sub>Carlos Eduardo Guimarães Coimbra</sub>](https://github.com/duducoimbra) |  [<img loading="lazy" src="https://avatars.githubusercontent.com/u/30351153?v=4" width=115><br><sub>Guilherme Lima</sub>](https://github.com/guilhermeonrails) |  [<img loading="lazy" src="https://avatars.githubusercontent.com/u/8989346?v=4" width=115><br><sub>Alex Felipe</sub>](https://github.com/alexfelipe) |
+| :---: | :---: | :---: |
+
 

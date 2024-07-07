@@ -16,7 +16,7 @@ Disponível em: https://plantasdecasas.com/planta-baixa-terreno-estreito/humaniz
 Outra característica do projeto é reconhecer e separar quais cômodos cada usuário cadastrado pode modificar em seu domicílio, a fim de não gerar conflitos e desavenças entre os familiares. Além disso, a fim de universalizar o projeto, nosso código está disponível em português, inglês e espanhol, isto é, nosso sistema pode ser utilizado em diversos países, sendo necessário apenas pequenas modificações de inicialização.
 Assim, haja visto as soluções propostas, os estudantes acreditam que podem auxiliar e facilitar a vida dos usuários do projeto, fazendo com que possam monitorar continuamente seus domicílios e controlar de maneira acessível o estado de cada cômodo da casa. 
 
-Principais arquivos
+# Principais arquivos
 . programa
 ├── Makefile
 ├── build/
@@ -52,29 +52,32 @@ Principais arquivos
 │    └── Sala.cpp
 │    └── Garagem.cpp
 │  └── main.cpp
-Instruções de Instalação
+
+# Instruções de Instalação
+
 Para instalar o sistema de automação residencial, siga os passos abaixo:
-Clone o repositório do projeto em um arquivo de uso pessoal;
-Disponível em: https://github.com/Joao0607B/Trabalho-PDS-2.git
-Selecione os sensores necessários para cada cômodo de acordo com o projeto, sendo eles:
-Sensor de temperatura;
-Sensor de umidade;
-Sensor de luminosidade;
-Sensor de fechamento de janela;
-Sensor de fechamento de porta;
-Sensor de fechamento de portão de garagem.
-Posicione os sensores escolhidos conforme manda o fabricante;
-Combine os sensores com o programa e, se necessário, adicione um usuário com novos sensores;
-Compile o código-fonte usando as ferramentas adequadas para seu sistema operacional.
-Instruções de Uso
+- Clone o repositório do projeto em um arquivo de uso pessoal;
+  - Disponível em: https://github.com/Joao0607B/Trabalho-PDS-2.git
+- Selecione os sensores necessários para cada cômodo de acordo com o projeto, sendo eles:
+  - Sensor de temperatura;
+  - Sensor de umidade;
+  - Sensor de luminosidade;
+  - Sensor de fechamento de janela;
+  - Sensor de fechamento de porta;
+  - Sensor de fechamento de portão de garagem.
+- Posicione os sensores escolhidos conforme manda o fabricante;
+- Combine os sensores com o programa e, se necessário, adicione um usuário com novos sensores;
+- Compile o código-fonte usando as ferramentas adequadas para seu sistema operacional.
+
+# Instruções de Uso
+
 Para utilizar o sistema de automação residencial:
-Inicie o sistema conforme as instruções de inicialização fornecidas;
-Coloque seus dados e finalize o cadastro das suas informações;
-Acesse a interface de usuário via desktop para monitorar e controlar os dispositivos conectados;
-Personalize as configurações e defina cenários de automação de acordo com suas preferências e necessidades.
-Desenvolvedores
-Carlos Eduardo Guimarães Coimbra; 
-Igor Gustavo de Souza Araujo;
-João Pedro Braga da Silva;
-Lucas de Araújo Sampaio Latini;
-Otavio Henrique da Silva.
+- Inicie o sistema conforme as instruções de inicialização fornecidas;
+- Coloque seus dados e finalize o cadastro das suas informações;
+- Acesse a interface de usuário via desktop para monitorar e controlar os dispositivos conectados;
+- Personalize as configurações e defina cenários de automação de acordo com suas preferências e necessidades.
+
+# Desenvolvedores
+| [<img loading="lazy" src="https://avatars.githubusercontent.com/u/37356058?v=4" width=115><br><sub>Carlos Eduardo Guimarães Coimbra</sub>](https://github.com/duducoimbra) |  [<img loading="lazy" src="https://avatars.githubusercontent.com/u/30351153?v=4" width=115><br><sub>Igor Gustavo de Souza Araujo</sub>](https://github.com/Igorgu3) |  [<img loading="lazy" src="https://avatars.githubusercontent.com/u/8989346?v=4" width=115><br><sub>João Pedro Braga da Silva</sub>](https://github.com/Joao0607B) | [<img loading="lazy" src="https://avatars.githubusercontent.com/u/8989346?v=4" width=115><br><sub>Lucas de Araújo Sampaio Latini</sub>](https://github.com/lucas-latini) | [<img loading="lazy" src="https://avatars.githubusercontent.com/u/8989346?v=4" width=115><br><sub>Otavio Henrique da Silva</sub>](https://github.com/Octupuss) | 
+| :---: | :---: | :---: |
+

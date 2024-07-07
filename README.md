@@ -19,40 +19,40 @@ Outra característica do projeto é reconhecer e separar quais cômodos cada usu
 
 # Principais arquivos
 . programa
-├── Makefile
-├── build/
-│  └── main.o
-│  └── Usuário.o
-│  └── BancoDeDados.o
-│  └── Autenticação.o
-│  └── Sensores.o
-│  └── Quarto.o
-│  └── Cozinha.o
-│  └── Banheiro.o
-│  └── Sala.o
-│  └── Garagem.o
-├── include/
-│  └── Usuário.h
-│  └── BancoDeDados.h
-│  └── Autenticação.h
-│  └── Sensores.h
-│  └── Quarto.h
-│  └── Cozinha.h
-│  └── Banheiro.h
-│  └── Sala.h
-│  └── Garagem.h
-└── src/
-│  └── Cómodos/
-│    └── Usuário.cpp
-│    └──  BancoDeDados.cpp
-│    └── Autenticação.cpp
-│    └── Sensores.cpp
-│    └── Quarto.cpp
-│    └── Cozinha.cpp
-│    └── Banheiro.cpp
-│    └── Sala.cpp
-│    └── Garagem.cpp
-│  └── main.cpp
+- Makefile
+- build/
+  - main.o
+  - Usuário.o
+  - BancoDeDados.o
+  - Autenticação.o
+  - Sensores.o
+  - Quarto.o
+  - Cozinha.o
+  - Banheiro.o
+  - Sala.o
+  - Garagem.o
+- include/
+  - Usuário.h
+  - BancoDeDados.h
+  - Autenticação.h
+  - Sensores.h
+  - Quarto.h
+  - Cozinha.h
+  - Banheiro.h
+  - Sala.h
+  - Garagem.h
+- src/
+  - Classes/
+    - Usuário.cpp
+    - BancoDeDados.cpp
+    - Autenticação.cpp
+    - Sensores.cpp
+    - Quarto.cpp
+    - Cozinha.cpp
+    - Banheiro.cpp
+    - Sala.cpp
+    - Garagem.cpp
+  - main.cpp
 
 # Instruções de Instalação
 Para instalar o sistema de automação residencial, siga os passos abaixo:

@@ -77,8 +77,8 @@ Para utilizar o sistema de automação residencial:
 - Personalize as configurações e defina cenários de automação de acordo com suas preferências e necessidades.
 
 # Desenvolvedores
-| [<img loading="lazy" src="https://avatars.githubusercontent.com/u/174884404?v=4" width=115><br><sub>Carlos Coimbra</sub>](https://github.com/duducoimbra) |  [<img loading="lazy" src="https://avatars.githubusercontent.com/u/174391290?s=400&u=563703186cd45436cfbe4b6789dfb0fd9afdf356&v=4" width=115><br><sub>Igor Araujo</sub>](https://github.com/Igorgu3) |  [<img loading="lazy" src="https://avatars.githubusercontent.com/u/168564497?v=4" width=115><br><sub>João Silva</sub>](https://github.com/Joao0607B) | [<img loading="lazy" src="https://avatars.githubusercontent.com/u/174884410?v=4" width=115><br><sub>Lucas Latini</sub>](https://github.com/lucas-latini) |  [<img loading="lazy" src="https://avatars.githubusercontent.com/u/51024598?v=4" width=115><br><sub>Otávio Silva</sub>](https://github.com/Octupuss)  |
-| :---: | :---: | :---: |
+| [<img loading="lazy" src="https://avatars.githubusercontent.com/u/174884404?v=4" width=100><br><sub>Carlos Coimbra</sub>](https://github.com/duducoimbra) |  [<img loading="lazy" src="https://avatars.githubusercontent.com/u/174391290?s=400&u=563703186cd45436cfbe4b6789dfb0fd9afdf356&v=4" width=100><br><sub>Igor Araujo</sub>](https://github.com/Igorgu3) |  [<img loading="lazy" src="https://avatars.githubusercontent.com/u/168564497?v=4" width=100><br><sub>João Silva</sub>](https://github.com/Joao0607B) | [<img loading="lazy" src="https://avatars.githubusercontent.com/u/174884410?v=4" width=100><br><sub>Lucas Latini</sub>](https://github.com/lucas-latini) |  [<img loading="lazy" src="https://avatars.githubusercontent.com/u/51024598?v=4" width=100><br><sub>Otávio Silva</sub>](https://github.com/Octupuss)  | 
+| :---: | :---: | :---: | :---: | :---: | 
 
 
 

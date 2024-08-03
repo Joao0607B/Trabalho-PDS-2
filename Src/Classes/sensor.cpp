@@ -109,3 +109,19 @@ void sensor::atribuir_nome_sensor(const std::string& nome_sensor, const std::str
     std::cout << "Sensor não existente" << std::endl;
   }
 }
+
+string sensor::obter_nome_sensor(const std::string& nome_sensor) const
+{
+  for(auto it = sensor_nome_map_.begin(); it != sensor_nome_map_.end(); ++it)
+    {
+      if(it->second == nome_sensor)
+      {
+        return it->first;
+      }
+      else
+      {
+        std::cout << "Sensor não encontrado" << std::endl;
+      }
+    }
+  return "";
+}

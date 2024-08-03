@@ -38,6 +38,9 @@ void atualizar_nome_sensor(const std::string& nome_antigo_sensor, const std::str
 // Associa um nome dado ao sensor pelo usuário a um sensor vindo do txt
 void atribuir_nome_sensor(const std::string& nome_sensor, const std::string& nome);
 
+// Retorna o nome do sensor dado pelo usuário associado ao nome do txt caso exista 
+string sensor::obter_nome_sensor(const std::string& nome_sensor) const
+
 };
 
 #endif

@@ -73,5 +73,40 @@ class Usuario {
    */
   void alterar(const string& login, const string& senha_antiga, const string& senha_nova);
 
+    /**
+   * @brief Altera as credenciais do usuario apos o usuario esquecer a senha e responder a pergunta de seguranca corretamente.
+   * @param login Login utilizado no cadastro do usuario.
+   * @param senha_nova Novo password que deve ser atualizado.
+   * @param ignorar_senhaantiga Variavel booleana para definir quando e chamada pela funcao esqueciasenha
+   */
+  void alterar2(const string& login, const string& senha_nova, bool ignorar_senhaantiga);
+
+  /**
+   * @brief Ajuda o usuario a entrar em sua conta caso esqueÃ§a sua senha.
+   * @param login Login utilizado no cadastro do usuario.
+   * @param pergunta_seguranca Pergunta de seguranÃ§a utilizado no cadastro para caso o usuario esqueÃ§a a senha.
+   * @param resposta_seguranca Resposta da pergunta de seguranÃ§a utilizado no cadastro para caso o usuario esqueÃ§a a senha.
+   */
+  void esqueciasenha(const string& login, const string& resposta_seguranca);
+
+  /**
+   * @brief Define o primeiro usuario como admin.
+   * @param login Login utilizado no cadastro do usuario.
+   * @param nivel Nivel de acesso do usuario utilizado no cadastro.
+   */
+  void defineAdmin(const string& login, const int& nivel);
+
+  /**
+   * @brief Define o primeiro usuario como admin.
+   * @param adminlogin Login do admin utilizado no cadastro do usuario.
+   * @param login Login do usuario que sera modificado pelo admin.
+   * @param novonivel Novonivel do usuario definido pelo admin.
+   */
+  void alteranivel(const string& adminlogin, const string& login, const int& novonivel);
+
+  /**
+   * @brief Imprime as informacoes salvas de todos os usuarios.
+   */
+  void printInfos();
 };
 #endif

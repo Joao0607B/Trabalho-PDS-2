@@ -243,7 +243,30 @@ void Usuario::printInfos() {
     }
 }
 
+string Usuario::getSenha(const string& login) const {
+    if (cadastro.find(login) != cadastro.end()) {
+        return cadastro.at(login).senha;
+    }
+    return "";
+}
 
+int Usuario::getNivel(const string& login) const {
+    if (cadastro.find(login) != cadastro.end()) {
+        return cadastro.at(login).nivel;
+    }
+    return -1;
+}
 
+string Usuario::getPergunta(const string& login) const {
+    if (cadastro.find(login) != cadastro.end()) {
+        return cadastro.at(login).pergunta_seguranca;
+    }
+    return "";
+}
 
-
+string Usuario::getResposta(const string& login) const {
+    if (cadastro.find(login) != cadastro.end()) {
+        return cadastro.at(login).resposta_seguranca;
+    }
+    return "";
+}

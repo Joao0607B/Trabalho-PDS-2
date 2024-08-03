@@ -250,7 +250,7 @@ string Usuario::getSenha(const string& login) const {
     return "";
 }
 
-int Usuario::getNivel(const string& login) const {
+int Usuario::get_permissao(const string& login) const {
     if (cadastro.find(login) != cadastro.end()) {
         return cadastro.at(login).nivel;
     }

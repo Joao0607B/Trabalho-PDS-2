@@ -17,7 +17,7 @@ struct elemento
 {
  std::string nome;
  std::string tipo;
- std::string *sensor_associado;
+ std::string sensor_associado;
 };
 
 // Vector de elementos do quarto 
@@ -46,6 +46,9 @@ void remover_sensor(const std::string& nome_sensor);
 
 // Printa as informações do quarto tais como: nome do quarto e suas quantidades de elementos
 void infos_quarto();
+
+// Retorna o nome do sensor associado ao elemento
+std::string get_sensor_associado(const std::string& nome);
 
 };
 

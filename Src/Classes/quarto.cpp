@@ -24,7 +24,6 @@ void quarto::listar(std::string tipo)
   }
 }
 
-
 quarto::quarto(std::string nome, int qtd_portas, int qtd_janelas, int qtd_lampadas, int qtd_tvs, int qtd_ar_condicionado, int qtd_umidificador)
 {
   nome_ = nome;
@@ -48,7 +47,7 @@ void quarto::Nomear_Elemento(int qtd, std::string tipo)
     }
 }
 
-void quarto::atribuir_sensor(const std::string& nome_sensor, const std::string& nome))
+void quarto::atribuir_sensor(const std::string& nome_sensor, const std::string& nome)
 {
   for(int i = 0; i < elementos_.size(); i++)
   {
@@ -94,7 +93,23 @@ void quarto::infos_quarto()
   listar("tv");
   std::cout << "Ar-condicionados: " << std::endl;
   listar("ar-condicionado");
-  std::cout << "Umificadores: " << std::endl
-  lisar("umidificador");
+  std::cout << "Umificadores: " << std::endl;
+  listar("umidificador");
   
+}
+
+std::string quarto::get_sensor_associado(const std::string& nome)
+{
+  for(int i = 0; i < elementos_.size(); i++)
+  {
+    if(elementos_[i].nome == nome)
+    {
+      return elementos_[i].sensor_associado;
+    }
+    else
+    {
+      std::cout << "Não existe nenhum sensor com esse nome" << std::endl;
+    }
+  }
+  return 0;
 }

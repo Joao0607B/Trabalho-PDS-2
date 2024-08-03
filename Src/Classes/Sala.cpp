@@ -1,49 +1,115 @@
 #include "Sala.h"
 
-Sala::Sala(int numPortas, int numJanelas, int numLampadas, int numTVs) 
-    : Portas(numPortas, false), Janelas(numJanelas, false), 
-      Lampadas(numLampadas, false), TVs(numTVs, false), temperatura(20) {
-    // Construtor inicializa os vetores com o número especificado de elementos
-    // Todos os elementos são inicializados como `false` (desligados/fechados)
+int Sala::quantidade(std::string tipo)
+{
+  int count = 0;
+   for(int i = 0; i < elementos_.size(); i++)
+   {
+    if(elementos_[i].tipo == tipo)
+    {
+      count++; 
+    }
+   }
+  return count;
 }
 
-void Sala::CH_Porta(int index, bool _x) {
-    if (index >= 0 && index < Portas.size()) {
-        Portas[index] = _x;
-        std::cout << "Porta " << index << " " << (Portas[index] ? "aberta" : "fechada") << std::endl;
-    } else {
-        std::cerr << "Índice de porta inválido!" << std::endl;
+void Sala::listar(std::string tipo)
+{
+  for(int i = 0; i < elementos_.size(); i++)
+  {
+    if(elementos_[i].tipo == tipo)
+    {
+      std::cout << elementos_[i].nome << std::endl;
+    }
+  }
+}
+
+Sala::Sala(std::string nome, int qtd_portas, int qtd_janelas, int qtd_lampadas, int qtd_tvs, int qtd_ar_condicionado, int qtd_umidificador)
+{
+  nome_ = nome;
+  Nomear_Elemento(qtd_portas, "porta");
+  Nomear_Elemento(qtd_janelas, "janela");
+  Nomear_Elemento(qtd_lampadas, "lampada");
+  Nomear_Elemento(qtd_tvs, "tv");
+  Nomear_Elemento(qtd_ar_condicionado, "ar-condicionado");
+  Nomear_Elemento(qtd_umidificador, "umidificador");
+
+  std::cout << "Sala criada com sucesso!" << std::endl;
+}
+
+void Sala::Nomear_Elemento(int qtd, std::string tipo)
+{
+  for(int i = 0; i < qtd; i++)
+    {
+      std::cout << "Digite o nome da " << tipo << ':' << std::endl;
+      std::cin >> elementos_[i].nome;
+      elementos_[i].tipo = tipo;
     }
 }
 
-void Sala::CH_Janela(int index, bool _x) {
-    if (index >= 0 && index < Janelas.size()) {
-        Janelas[index] = _x;
-        std::cout << "Janela " << index << " " << (Janelas[index] ? "aberta" : "fechada") << std::endl;
-    } else {
-        std::cerr << "Índice de janela inválido!" << std::endl;
+void Sala::atribuir_sensor(const std::string& nome_sensor, const std::string& nome)
+{
+  for(int i = 0; i < elementos_.size(); i++)
+  {
+    if(elementos_[i].nome == nome)
+    {
+      elementos_[i].sensor_associado = nome_sensor;
     }
+  }
 }
 
-void Sala::CH_Lampada(int index, bool _x) {
-    if (index >= 0 && index < Lampadas.size()) {
-        Lampadas[index] = _x;
-        std::cout << "Lâmpada " << index << " " << (Lampadas[index] ? "ligada" : "desligada") << std::endl;
-    } else {
-        std::cerr << "Índice de lâmpada inválido!" << std::endl;
+void Sala::remover_sensor(const std::string& nome_sensor)
+{
+  for(int i = 0; i < elementos_.size(); i++)
+  {
+    if(elementos_[i].sensor_associado == nome_sensor)
+    {
+      elementos_[i].sensor_associado = "Não atribuido";
     }
+    else
+    {
+      std::cout << "Não existe nenhum sensor com esse nome" << std::endl;
+    }
+  }
 }
 
-void Sala::CH_TV(int index, bool _x) {
-    if (index >= 0 && index < TVs.size()) {
-        TVs[index] = _x;
-        std::cout << "TV " << index << " " << (TVs[index] ? "ligada" : "desligada") << std::endl;
-    } else {
-        std::cerr << "Índice de TV inválido!" << std::endl;
-    }
+void Sala::infos_quarto()
+{
+
+  std::cout << "Nome do quarto: " << nome_ << std::endl;
+  std::cout << "Quantidade de portas: " << quantidade("porta") << std::endl;
+  std::cout << "Quantidade de janelas: " << quantidade("janela") << std::endl;
+  std::cout << "Quantidade de lampadas: " << quantidade("lampada") << std::endl;
+  std::cout << "Quantidade de tvs: " << quantidade("tv") << std::endl;
+  std::cout << "Quantidade de ar-condicionados: " << quantidade("ar-condicionado") << std::endl;
+  std::cout << "Quantidade de umidificadores: " << quantidade("umidificador") << std::endl;
+  std::cout << "Portas: " << std::endl;
+  listar("porta");
+  std::cout << "Janelas: " << std::endl;
+  listar("janela");
+  std::cout << "Lampadas: " << std::endl;
+  listar("lampada");
+  std::cout << "Tvs: " << std::endl;
+  listar("tv");
+  std::cout << "Ar-condicionados: " << std::endl;
+  listar("ar-condicionado");
+  std::cout << "Umificadores: " << std::endl;
+  listar("umidificador");
+  
 }
 
-void Sala::CH_Temperatura(int _x) {
-    temperatura = _x;
-    std::cout << "Temperatura definida para " << temperatura << " graus" << std::endl;
+std::string Sala::get_sensor_associado(const std::string& nome)
+{
+  for(int i = 0; i < elementos_.size(); i++)
+  {
+    if(elementos_[i].nome == nome)
+    {
+      return elementos_[i].sensor_associado;
+    }
+    else
+    {
+      std::cout << "Não existe nenhum sensor com esse nome" << std::endl;
+    }
+  }
+  return 0;
 }

@@ -134,6 +134,115 @@ void Usuario::alterar(const string& login, const string& senha_antiga, const str
     }
 }
 
+void Usuario::alterar2(const string& login, const string& senha_nova, bool ignorar_senhaantiga) {
+    bool v = validarSenha(senha_nova, login);  
+    
+    if (v == true){
+        for (auto& a : cadastro){
+            if (a.first == login){
+              a.second.senha = senha_nova;
+              cout << "Senha alterada com sucesso!" << endl;
+              return; 
+            }
+        }
+    }
+
+    else if (v == false){
+      cout << "Senha nova invÃ¡lida, tente novamente" << endl;
+      return;
+    }
+}
+
+void Usuario::esqueciasenha(const string& login, const string& resposta_seguranca) {
+    bool respostadesegurancaencontrada = false;
+
+    for (auto& a : cadastro){
+      if (a.first == login){
+        if (a.second.resposta_seguranca == resposta_seguranca){
+          respostadesegurancaencontrada = true;
+          
+          string senha_nova;
+          cout << "Resposta correta! Por favor, insira a nova senha: ";
+          cin >> senha_nova;
+
+          if (validarSenha(senha_nova, login)) {
+            alterar2(login, senha_nova, true);
+            cout << "Senha alterada com sucesso!" << endl;
+          } 
+          
+          else {
+            cout << "Senha nova invalida, tente novamente" << endl;
+          }
+
+          return;
+        }
+      }
+    }
+    
+    if (respostadesegurancaencontrada == false){
+      cout << "A resposta de seguranca digitada para este login esta incorreta, tente novamente" << endl;
+    }   
+}
+
+void Usuario::defineAdmin(const string& login, const int& nivel) {        
+    bool usuarioencontrado = false;
+    for (auto& a : cadastro){
+      if (a.first == login){
+        usuarioencontrado = true;
+        if (!existeAdmin() && nivel == 1){             
+          cout << "O usuÃ¡rio " << login << " agora Ã© o admin." << endl;
+          return;
+        }
+        else{
+          cout << "JÃ¡ existe um adminstrador. NÃ£o Ã© possÃ­vel inserir outro usuÃ¡rio como admin." << endl;
+          return;
+        }
+      }
+    }
+
+    if (usuarioencontrado == false){
+      cout << "UsuÃ¡rio nÃ£o encontrado" << endl;
+    }      
+}
+
+void Usuario::alteranivel (const string& adminlogin, const string& login, const int& novonivel) {        
+  bool adminEncontrado = false; 
+  bool usuarioEncontrado = false; 
+
+  for (const auto& a: cadastro){
+	  if (a.first == adminlogin && a.second.nivel== 1){
+	    adminEncontrado = true;
+    }
+  }
+
+  if (adminEncontrado == false){
+    cout << "Apenas o admin pode alterar o nÃ­vel de acesso de outros usuÃ¡rios." << endl;
+    return;
+  }
+
+  for (auto& x : cadastro) {
+    if (x.first == login) {
+      usuarioEncontrado = true;
+      x.second.nivel = novonivel;
+      cout << "NÃ­vel de acesso do usuÃ¡rio " << login << " alterado para " << novonivel << "." << endl;
+      return;
+    }
+  }
+}
+
+void Usuario::printInfos() {
+    int n = 0;
+    
+    for (auto& x : cadastro){
+      n++;
+    }
+    cout << n << endl;
+
+    for (auto& g : cadastro){
+      cout << g.first << " :" << g.second.nivel << endl;
+    }
+}
+
 
 
 

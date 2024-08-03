@@ -108,39 +108,39 @@ class Usuario {
    * @brief Imprime as informacoes salvas de todos os usuarios.
    */
   void printInfos();
+  
+   // Métodos getter
 
-    // Métodos getter
+  /**
+  * @brief Retorna a senha do usuario.
+  *
+  * @param login Login do usuario.
+  * @return Senha do usuario, ou uma string vazia se o usuario nao existir.
+  */
+  string getSenha(const string& login) const;
 
-    /**
-     * @brief Retorna a senha do usuario.
-     *
-     * @param login Login do usuario.
-     * @return Senha do usuario, ou uma string vazia se o usuario nao existir.
-     */
-    string getSenha(const string& login) const;
+  /**
+  * @brief Retorna o nivel de acesso do usuario.
+  *
+  * @param login Login do usuario.
+  * @return Nivel de acesso do usuario, ou -1 se o usuario nao existir.
+  */
+  int getNivel(const string& login) const;
 
-    /**
-     * @brief Retorna o nivel de acesso do usuario.
-     *
-     * @param login Login do usuario.
-     * @return Nivel de acesso do usuario, ou -1 se o usuario nao existir.
-     */
-    int get_permissao(const string& login) const;
+  /**
+  * @brief Retorna a pergunta de seguranca do usuario.
+  *
+  * @param login Login do usuario.
+  * @return Pergunta de seguranca do usuario, ou uma string vazia se o usuario nao existir.
+  */
+  string getPergunta(const string& login) const;
 
-    /**
-     * @brief Retorna a pergunta de seguranca do usuario.
-     *
-     * @param login Login do usuario.
-     * @return Pergunta de seguranca do usuario, ou uma string vazia se o usuario nao existir.
-     */
-    string getPergunta(const string& login) const;
-
-    /**
-     * @brief Retorna a resposta da pergunta de seguranca do usuario.
-     *
-     * @param login Login do usuario.
-     * @return Resposta da pergunta de seguranca do usuario, ou uma string vazia se o usuario nao existir.
-     */
-    string getResposta(const string& login) const;
+  /**
+  * @brief Retorna a resposta da pergunta de seguranca do usuario.
+  *
+  * @param login Login do usuario.
+  * @return Resposta da pergunta de seguranca do usuario, ou uma string vazia se o usuario nao existir.
+  */
+  string getResposta(const string& login) const;
 };
 #endif

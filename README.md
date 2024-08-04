@@ -16,8 +16,8 @@
 
 <p align="center"> Disponível em: https://plantasdecasas.com/planta-baixa-terreno-estreito/humanizada-maraba/)</p>
 
-<p align="justify"> Ademais, foi definido determinados sensores como padrões, sendo esses: sensor de temperatura, de umidade, de luminosidade, de fechamento de janela, porta e portão de garagem. Além disso, assim como definido para os cômodos, caso o usuário deseje adicionar um novo sensor em seu domicílio, ele será capaz de cadastrar e configurar os novos sensores de acordo com suas necessidades. </p>
-<p align="justify"> Outra característica do projeto é reconhecer e separar quais cômodos cada usuário cadastrado pode modificar em seu domicílio, a fim de não gerar conflitos e desavenças entre os familiares. Além disso, a fim de universalizar o projeto, nosso código está disponível em português, inglês e espanhol, isto é, nosso sistema pode ser utilizado em diversos países, sendo necessário apenas pequenas modificações de inicialização. </p>
+<p align="justify"> Ademais, foi definido determinados sensores como padrões, sendo esses: sensor de temperatura, de umidade, de luminosidade, de fechamento de janela, porta e portão de garagem. Além disso, assim como definido para os cômodos, caso o usuário deseje adicionar um novo sensor em seu domicílio, ele será capaz de cadastrar e configurar os novos sensores de acordo com suas necessidades. Para a garantia do funcionamento correto do código e suas ferramente, aconselha-se que todos os sensores depositem seus valores em um documento do tipo ".txt" no seguinte formato: id_sensor " "(separados por um espaço) valor lido pelo sensor; caso os valores não estejam organizados desta forma, o programa identifica um erro e não será possível analisar as informações dos sensores adequadamente, além disso, vale ressaltar que o usuário terá a capacidade de nomear os sensores da forma que desejar tornando mais fácil o manuseio dos equipamentos adquiridos. </p>
+<p align="justify"> Outra característica do projeto é reconhecer e separar quais cômodos cada usuário cadastrado pode modificar em seu domicílio, a fim de não gerar conflitos e desavenças entre os familiares. </p>
 <p align="justify"> Assim, haja visto as soluções propostas, os estudantes acreditam que podem auxiliar e facilitar a vida dos usuários do projeto, fazendo com que possam monitorar continuamente seus domicílios e controlar de maneira acessível o estado de cada cômodo da casa. </p>
 
 # Principais arquivos
@@ -25,36 +25,33 @@
 - Makefile
 - build/
   - main.o
-  - Usuário.o
-  - BancoDeDados.o
-  - Autenticação.o
-  - Sensores.o
-  - Quarto.o
-  - Cozinha.o
-  - Banheiro.o
-  - Sala.o
-  - Garagem.o
-- include/
-  - Usuário.h
-  - BancoDeDados.h
-  - Autenticação.h
-  - Sensores.h
-  - Quarto.h
-  - Cozinha.h
-  - Banheiro.h
-  - Sala.h
-  - Garagem.h
+  - usuário.o
+  - comodo.o
+  - sensores.o
+  - quarto.o
+  - cozinha.o
+  - banheiro.o
+  - sala.o
+  - garagem.o
+- include/  
+  - usuário.h
+  - sensores.h
+  - comodo.h
+  - quarto.h
+  - cozinha.h
+  - banheiro.h
+  - sala.h
+  - garagem.h
 - src/
   - Classes/
-    - Usuário.cpp
-    - BancoDeDados.cpp
-    - Autenticação.cpp
-    - Sensores.cpp
-    - Quarto.cpp
-    - Cozinha.cpp
-    - Banheiro.cpp
-    - Sala.cpp
-    - Garagem.cpp
+    - usuário.cpp
+    - sensores.cpp
+    - comodo.cpp
+    - quarto.cpp
+    - cozinha.cpp
+    - banheiro.cpp
+    - sala.cpp
+    - garagem.cpp
   - main.cpp
 
 # Instruções de Instalação

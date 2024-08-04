@@ -14,6 +14,7 @@ void sensor::adicionar_sensor(const std::string& nome_sensor)
      {
        sensor_map_[nome_sensor] = 0;
        sensor_nome_map_["Não atribuído"] = nome_sensor;
+       std::cout << "Sensor adicionado com sucesso" << std::endl; 
      }
     else
     {

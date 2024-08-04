@@ -1,20 +1,8 @@
-execution: build/main.o build/usuario.o sensor.o quarto.o cozinha.o banheiro.o sala.o garagem.o
-	c++ build/main.o build/usuario.o build/sensor.o build/quarto.o build/cozinha.o build/banheiro.o build/sala.o build/garagem.o -o execution
+execution: build/main.o build/usuario.o sensor.o comodo.o 
+	c++ build/main.o build/usuario.o build/sensor.o build/comodo.o -o execution
 	
-build/garagem.o: src/Classes/garagem.cpp include/garagem.hpp
-	c++ src/Classes/garagem.cpp -c -I include -o garagem.o
-
-build/sala.o: src/Classes/sala.cpp include/sala.hpp
-	c++ src/Classes/sala.cpp -c -I include -o sala.o
-
-build/banheiro.o: src/Classes/banheiro.cpp include/banheiro.hpp
-	c++ src/Classes/banheiro.cpp -c -I include -o banheiro.o
-
-build/cozinha.o: src/Classes/cozinha.cpp include/cozinha.hpp
-	c++ src/Classes/cozinha.cpp -c -I include -o cozinha.o
-
-build/quarto.o: src/Classes/quarto.cpp include/quarto.hpp
-	c++ src/Classes/quarto.cpp -c -I include -o quarto.o
+build/comodo.o: src/Classes/comodo.cpp include/comodo.hpp
+	c++ src/Classes/comodo.cpp -c -I include -o comodo.o
 	
 build/sensor.o: src/Classes/sensor.cpp include/sensor.hpp
 	c++ src/Classes/sensor.cpp -c -I include -o sensor.o

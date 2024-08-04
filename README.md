@@ -60,9 +60,9 @@ Para instalar o sistema de automação residencial, siga os passos abaixo:
 O projeto Smart Haus tem o objetivo de ser uma automação residencial simples e de fácil acesso, dessa forma, preza-se pela aplicabilidade do código tanto quanto pelo seu funcionamento e customização. Assim sendo, dividimos as instruções de uso em cinco frentes de ação contemplando as seguintes vertentes:
 1. Requisitos Iniciais do Sistema:
    - Requisitos de Hardware e Software:
-     Para iniciar as preparações do sistema Smart Haus, primeiramente, certifique-se de possuir um dispositivo com um compilador que suporte a linguagem de programação chamada de “C + +” (Recomenda-se o uso de compiladores como GCC para sistemas baseados em Unix e MSVC para sistemas baseados em Windows). 
-  - Requisitos de Sensores:
-    Sobre os sensores, recomenda-se inicialmente a compra dos seguintes sensores base recomendados para o monitoramento residencial: sensor de temperatura, sensor de umidade, sensor de fechamento (em estado binário) e sensor de gás. Além da compra, também é necessário sincronizá-los ao computador da forma descrita, também é importante conectar os sensores ao seu computador conforme as instruções do fabricante e, dessa forma, pode concluir a instalação de drivers ou softwares específicos dos sensores (lembre-se de verificar a compatibilidade dos sensores com seu sistema operacional antes de prosseguir.
+     Para iniciar as preparações do sistema Smart Haus, primeiramente, certifique-se de possuir um dispositivo com um compilador que suporte a linguagem de programação chamada de “C + +” (Recomenda-se o uso de compiladores como GCC para sistemas baseados em Unix e MSVC para sistemas baseados em Windows).
+   - Requisitos de Sensores:
+     Sobre os sensores, recomenda-se inicialmente a compra dos seguintes sensores base recomendados para o monitoramento residencial: sensor de temperatura, sensor de umidade, sensor de fechamento (em estado binário) e sensor de gás. Além da compra, também é necessário sincronizá-los ao computador da forma descrita, também é importante conectar os sensores ao seu computador conforme as instruções do fabricante e, dessa forma, pode concluir a instalação de drivers ou softwares específicos dos sensores (lembre-se de verificar a compatibilidade dos sensores com seu sistema operacional antes de prosseguir.
 
 2. Acesso ao Repositório GitHub do código do projeto:
    - Acessando o Repositório do GitHub:

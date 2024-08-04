@@ -28,32 +28,17 @@
   - usuário.o
   - comodo.o
   - sensores.o
-  - quarto.o
-  - cozinha.o
-  - banheiro.o
-  - sala.o
-  - garagem.o
 
 - include/  
   - usuário.h
   - sensores.h
   - comodo.h
-  - quarto.h
-  - cozinha.h
-  - banheiro.h
-  - sala.h
-  - garagem.h
 
 - src/
   - Classes/
     - usuário.cpp
     - sensores.cpp
     - comodo.cpp
-    - quarto.cpp
-    - cozinha.cpp
-    - banheiro.cpp
-    - sala.cpp
-    - garagem.cpp
   - main.cpp
 
 # Instruções de Instalação

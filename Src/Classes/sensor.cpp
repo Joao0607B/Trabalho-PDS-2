@@ -39,12 +39,14 @@ void sensor::remover_sensor(const std::string& nome_sensor)
           sensor_nome_map_.erase(it);
         }
       }
+      std::cout << "Sensor removido com sucesso" << std::endl;
   }
   else if(sensor_nome_map_.find(nome_sensor) != sensor_nome_map_.end())
   {
     sensor_nome_map_.erase(nome_sensor);
     string aux = sensor_nome_map_.at(nome_sensor);
     sensor_map_.erase(aux);
+    std::cout << "Sensor removido com sucesso" << std::endl;
   }
   else
   {

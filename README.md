@@ -1,7 +1,7 @@
 <h1 align="center"> Smart Haus </h1>
 
 # User Stories (Histórias de Usuário): 
-  Como um usuário, quero ser capaz de controlar certas ações, como a temperatura, umidade, iluminação e segurança de meu domicílio, e monitorar continuamente minha casa, por meio de um sistema inteligente e acessível.
+  Como um usuário, quero ser capaz de monitorar certas ações, como a temperatura, umidade, iluminação e segurança de meu domicílio, e visualizar continuamente minha casa, por meio de um sistema inteligente e acessível.
 
 # Descrição do projeto
 <p align="justify"> A crescente demanda por conforto e dinamismo nas residências têm impulsionado a busca por soluções tecnológicas práticas no cotidiano dos seres humanos. Nesse contexto, a automação residencial emerge como uma ferramenta crucial para otimizar a vida residencial diária, melhorar a segurança e aumentar a conveniência dos moradores. Isto é, diversas vezes no dia a dia as pessoas ficam com inseguranças ao sair de casa, pensando se alguma porta está aberta, se o fogão está ligado ou se as janelas foram devidamente fechadas, ou até mesmo, querem configurar remotamente o ar condicionado e as luzes de seu quarto sem sair do conforto de sua cama.</p>
@@ -33,6 +33,7 @@
   - banheiro.o
   - sala.o
   - garagem.o
+
 - include/  
   - usuário.h
   - sensores.h
@@ -42,6 +43,7 @@
   - banheiro.h
   - sala.h
   - garagem.h
+
 - src/
   - Classes/
     - usuário.cpp

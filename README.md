@@ -57,11 +57,43 @@ Para instalar o sistema de automação residencial, siga os passos abaixo:
 - Compile o código-fonte usando as ferramentas adequadas para seu sistema operacional.
 
 # Instruções de Uso
-Para utilizar o sistema de automação residencial:
-- Inicie o sistema conforme as instruções de inicialização fornecidas;
-- Coloque seus dados e finalize o cadastro das suas informações;
-- Acesse a interface de usuário via desktop para monitorar e controlar os dispositivos conectados;
-- Personalize as configurações e defina cenários de automação de acordo com suas preferências e necessidades.
+O projeto Smart Haus tem o objetivo de ser uma automação residencial simples e de fácil acesso, dessa forma, preza-se pela aplicabilidade do código tanto quanto pelo seu funcionamento e customização. Assim sendo, dividimos as instruções de uso em cinco frentes de ação contemplando as seguintes vertentes:
+1. Requisitos Iniciais do Sistema:
+   - Requisitos de Hardware e Software:
+     Para iniciar as preparações do sistema Smart Haus, primeiramente, certifique-se de possuir um dispositivo com um compilador que suporte a linguagem de programação chamada de “C + +” (Recomenda-se o uso de compiladores como GCC para sistemas baseados em Unix e MSVC para sistemas baseados em Windows). 
+  - Requisitos de Sensores:
+    Sobre os sensores, recomenda-se inicialmente a compra dos seguintes sensores base recomendados para o monitoramento residencial: sensor de temperatura, sensor de umidade, sensor de fechamento (em estado binário) e sensor de gás. Além da compra, também é necessário sincronizá-los ao computador da forma descrita, também é importante conectar os sensores ao seu computador conforme as instruções do fabricante e, dessa forma, pode concluir a instalação de drivers ou softwares específicos dos sensores (lembre-se de verificar a compatibilidade dos sensores com seu sistema operacional antes de prosseguir.
+
+2. Acesso ao Repositório GitHub do código do projeto:
+   - Acessando o Repositório do GitHub:
+     Abra seu navegador de internet e vá para o link que disponibiliza os arquivos principais do código fonte do projeto Smart Haus: https://github.com/Joao0607B/Trabalho-PDS-2.git.
+   - Clonando o Repositório:
+     Certifique-se de ter o Git instalado em seu computador. Caso não o possua, você pode tentar baixá-lo e instalá-lo a partir de https://git-scm.com/.
+     Para clonar, na prática, abra um terminal (ou prompt de comando no Windows), navegue até o diretório onde deseja clonar o repositório. Após escolher o local, execute o comando ”git clone https://github.com/Joao0607B/Trabalho-PDS-2.git”, dessa forma, ele criará uma nova pasta chamada “Trabalho-PDS-2” dentro do diretório atual e baixará todos os arquivos do repositório para essa pasta. Após clonar, certifique-se de que todos os arquivos importantes foram baixados (Você deve ver pastas e arquivos como “Makefile”, “src/” e “include/”).
+
+3. Configuração do Ambiente de Desenvolvimento:
+   - Compilação do código:
+     No diretório do projeto, utilize o “Makefile” para compilar o código-fonte e execute o comando “make”, isso criará arquivos binários necessários para a execução do sistema.
+   - Configuração dos Sensores no Sistema:
+     Antes de tudo, é importante se certificar de que os sensores estão bem sincronizados e se comunicam-se corretamente com o sistema. Para a configuração dos arquivos de tipo “.txt” que serão lidos pelo programa para extrair as informações dos sensores, é absolutamente recomendado que as informações estejam organizadas da seguinte forma e, caso não estejam organizados dessa forma, é possível que o código apresente um erro e não funcione corretamente:
+     - Cada linha deve representar um sensor diferente com seu respectivo valor;
+     - Cada linha deve possuir um sensor que virá antes de seu valor, sendo assim, a configuração seguirá o exemplo (“id do sensor” separado por um espaço de seu “valor”).
+
+4. Configuração e Personalização do Sistema:
+   - Cadastro e Configuração de Usuários:]
+     Execute o programa e siga as instruções para criar um novo usuário. Inicialmente, você deverá fazer o primeiro cadastro com suas informações, como nome, senha, nível de permissão, uma pergunta de segurança e sua respectiva resposta (a pergunta de segurança funciona como uma forma de você lembrar a resposta de segurança que será útil para redefinir sua senha caso tenha esquecido). Após o cadastro, faça login para acessar a interface principal.
+   - Configuração dos Cômodos e Sensores:
+     Utilize a interface para configurar os sensores e os cômodos da casa. Defina quais sensores estão associados a quais cômodos e ajuste as configurações conforme necessário.
+
+5. Uso e Monitoramento:
+   - Acesso à Interface de Controle:
+     Após a configuração, acesse a interface de usuário no desktop para monitorar em tempo real os dados dos sensores. A interface permite visualizar a temperatura, umidade, e status dos sensores de fechamento e sensor de gás (de acordo com os sensores base recomendados na seção 1).
+   - Definição de Cenários e Automação:
+     Configure cenários de automação, como acender as luzes ao anoitecer ou ajustar a temperatura durante a noite. Utilize as opções disponíveis para criar rotinas personalizadas que atendam às suas necessidades.
+   - Ajustes e Manutenção:
+     Monitore o desempenho do sistema e ajuste as configurações conforme necessário. Adicione novos sensores ou modifiquem os existentes através da interface de configuração para manter o sistema atualizado com as suas preferências.
+
+
   
 # Principais Dificuldades:
 <p align="justify"> No desenvolvimento da Smart Haus, enfrentamos diversos desafios, tanto técnicos quanto na integração do sistema. Uma das principais dificuldades foi padronizar os arquivos dos cômodos. Inicialmente, separamos as classes (Sala, Quarto, Cozinha, Banheiro e Garagem) e definimos as variáveis para os sensores. No entanto, ao implementar todas as classes dos cômodos no menu de opções para o usuário, percebemos que a navegação nessa interface se tornaria inviável. Além disso, a função de implementar sensores também se complicaria significativamente para cada classe dos cômodos citados.</p>

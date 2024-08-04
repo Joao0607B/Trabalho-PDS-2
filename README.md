@@ -76,6 +76,7 @@ O projeto Smart Haus tem o objetivo de ser uma automação residencial simples e
      No diretório do projeto, utilize o “Makefile” para compilar o código-fonte e execute o comando “make”, isso criará arquivos binários necessários para a execução do sistema.</p>
    - <p align="justify">Configuração dos Sensores no Sistema:
      Antes de tudo, é importante se certificar de que os sensores estão bem sincronizados e se comunicam-se corretamente com o sistema. Para a configuração dos arquivos de tipo “.txt” que serão lidos pelo programa para extrair as informações dos sensores, é absolutamente recomendado que as informações estejam organizadas da seguinte forma e, caso não estejam organizados dessa forma, é possível que o código apresente um erro e não funcione corretamente:</p>
+     
      - Cada linha deve representar um sensor diferente com seu respectivo valor;
      
      - Cada linha deve possuir um sensor que virá antes de seu valor, sendo assim, a configuração seguirá o exemplo (“id do sensor” separado por um espaço de seu “valor”).

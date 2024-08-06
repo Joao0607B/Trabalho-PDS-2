@@ -32,14 +32,14 @@
 
 - include/  
   - usuario.h
-  - sensores.h
+  - sensor.h
   - comodo.h
   - automacao.h
 
 - src/
   - Classes/
-    - usuário.cpp
-    - sensores.cpp
+    - usuario.cpp
+    - sensor.cpp
     - comodo.cpp
     - automacao.cpp
   - main.cpp

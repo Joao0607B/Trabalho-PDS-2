@@ -25,20 +25,23 @@
 - Makefile
 - build/
   - main.o
-  - usuário.o
+  - usuario.o
   - comodo.o
-  - sensores.o
+  - sensor.o
+  - automacao.o
 
 - include/  
-  - usuário.h
+  - usuario.h
   - sensores.h
   - comodo.h
+  - automacao.h
 
 - src/
   - Classes/
     - usuário.cpp
     - sensores.cpp
     - comodo.cpp
+    - automacao.cpp
   - main.cpp
 
 # Instruções de Instalação

@@ -58,7 +58,8 @@ Para instalar o sistema de automação residencial, siga os passos abaixo:
 - Posicione os sensores escolhidos conforme manda o fabricante;
 - Combine os sensores com o programa e, se necessário, adicione um usuário com novos sensores;
 - Compile o código-fonte usando as ferramentas adequadas para seu sistema operacional.
-OBS.: É ABSOLUTAMENTE IMPORTANTE DEIXAR TODOS OS ARQUIVOS NO MESMO DIRETÓRIO PARA COMPILAR O CÓDIGO FONTE DE MANEIRA CORRETA.
+
+  OBS.: É ABSOLUTAMENTE IMPORTANTE DEIXAR TODOS OS ARQUIVOS NO MESMO DIRETÓRIO PARA COMPILAR O CÓDIGO FONTE DE MANEIRA CORRETA.
 
 # Instruções de Uso
 O projeto Smart Haus tem o objetivo de ser uma automação residencial simples e de fácil acesso, dessa forma, preza-se pela aplicabilidade do código tanto quanto pelo seu funcionamento e customização. Assim sendo, dividimos as instruções de uso em cinco frentes de ação contemplando as seguintes vertentes:

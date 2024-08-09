@@ -1,18 +1,16 @@
 #include "automacao.hpp"
 
-void criar_automacao(std::string nome_automação, std::string elemento, std::string tipo_de_comparacao, double limite)
+void automacao::criar_automacao(std::string nome_automacao, std::string elemento, std::string tipo_de_comparacao, double limite)
 {
   automacao_ novo_elemento;
-  novo_elemento.nome_ = nome_automação;
+  novo_elemento.nome_ = nome_automacao;
   novo_elemento.tipo_ = tipo_de_comparacao;
   novo_elemento.elemento_associado_ = elemento;
   novo_elemento.limite_ = limite;
-  elementos_[nome_automação] = novo_elemento;
+  elementos_[nome_automacao] = novo_elemento;
 }
 
-}
-
-void remover_automacao(std::string nome_automacao)
+void automacao::remover_automacao(std::string nome_automacao)
 {
   for(auto it = elementos_.begin(); it != elementos_.end(); it++)
     {
@@ -27,7 +25,7 @@ void remover_automacao(std::string nome_automacao)
     }
 }
 
-void alterar_automacao(std::string nome_automacao, std::string elemento, std::string novo_tipo_de_comparacao, double novo_limite)
+void automacao::alterar_automacao(std::string nome_automacao, std::string elemento, std::string novo_tipo_de_comparacao, double novo_limite)
 {
   for(auto it = elementos_.begin(); it != elementos_.end(); it++)
     {
@@ -44,7 +42,7 @@ void alterar_automacao(std::string nome_automacao, std::string elemento, std::st
     }
 }
 
-bool usar_automacao(std::string nome_automacao, double valor_analisado)
+bool automacao::usar_automacao(std::string nome_automacao, double valor_analisado)
 {
   for(auto it = elementos_.begin(); it != elementos_.end(); it++)
   {
@@ -76,12 +74,40 @@ bool usar_automacao(std::string nome_automacao, double valor_analisado)
       }
     }
   }
+  return false;
 }
 
-void listar_automacao()
+
+
+void automacao::listar_automacoes()
 {
   for(auto it = elementos_.begin(); it != elementos_.end(); it++)
     {
       std::cout << "Nome: " << it->second.nome_ << "Tipo: " << it->second.tipo_ << "Sensor associado: " << it->second.elemento_associado_ << "Valor Limite: " << it->second.limite_ <<std::endl;
     }
+}
+
+std::string automacao::get_sensor_associado(std::string& nome_automacao) 
+{
+  for(auto it = elementos_.begin(); it != elementos_.end(); it++)
+    {
+      if(it->first == nome_automacao)
+      {
+        return it->second.elemento_associado_;
+      }
+    }
+  return "";
+}
+
+std::string automacao::get_nome_automacao(std::string& nome)
+{
+  for(auto it = elementos_.begin(); it != elementos_.end(); it++)
+    {
+      if(it->first == nome)
+      {
+        return it->second.nome_;
+      }
+    }
+  return "";
+ 
 }

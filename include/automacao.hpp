@@ -1,5 +1,10 @@
+#ifndef AUTOMACAO_H
+#define AUTOMACAO_H
+
 #include <iostream>
 #include <map>
+#include <vector>
+#include <string>
 
 class automacao
 {
@@ -13,11 +18,11 @@ class automacao
       double limite_;
    };
 
-   std::map<std::string, automacao_> elementos_;
+   std::map<std::string, automacao::automacao_> elementos_;
 
   public:
 
-  void criar_automacao(std::string nome_automação, std::string elemento, std::string tipo_de_comparacao, double limite);
+  void criar_automacao(std::string nome_automacao, std::string elemento, std::string tipo_de_comparacao, double limite);
 
   void remover_automacao(std::string nome_automacao);
 
@@ -25,5 +30,11 @@ class automacao
 
   bool usar_automacao(std::string nome_automacao, double valor_analisado);
 
-  void listar_automacao();
+  std::string get_sensor_associado(std::string& nome_automacao);
+
+  std::string get_nome_automacao(std::string& nome);
+
+  void listar_automacoes();
 };
+
+#endif

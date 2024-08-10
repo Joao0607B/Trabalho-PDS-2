@@ -20,7 +20,7 @@ void automacao::remover_automacao(std::string nome_automacao)
       }
       else
       {
-        std::cout << "Não existe nenhuma automação com esse nome" << std::endl;
+        std::cout << "NÃ£o existe nenhuma automaÃ§Ã£o com esse nome" << std::endl;
       }
     }
 }
@@ -37,7 +37,7 @@ void automacao::alterar_automacao(std::string nome_automacao, std::string elemen
       }
       else
       {
-        std::cout << "Não existe nenhuma automação com esse nome" << std::endl;
+        std::cout << "NÃ£o existe nenhuma automaÃ§Ã£o com esse nome" << std::endl;
       }
     }
 }

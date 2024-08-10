@@ -30,6 +30,8 @@
   {
     for(int i = 0; i < qtd; i++)
       {
+        elemento e;
+        elementos_.push_back(e);
         std::cout << "Digite o nome da " << tipo << ':' << std::endl;
         std::cin >> elementos_[i].nome;
         elementos_[i].tipo = tipo;
@@ -102,7 +104,7 @@
       }
   }
 
-void quarto::info()
+void quarto::info() 
 {
     std::cout << "Quantidade de portas: " << quantidade("porta") << std::endl;
     std::cout << "Quantidade de janelas: " << quantidade("janela") << std::endl;
@@ -174,7 +176,7 @@ void cozinha::info()
   
 }
 
-void banheiro::info()
+void banheiro::info() 
 {
   std::cout << "Quantidade de portas: " << quantidade("porta") << std::endl;
   std::cout << "Quantidade de janelas: " << quantidade("janela") << std::endl;
